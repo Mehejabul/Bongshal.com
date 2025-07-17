@@ -227,8 +227,8 @@ search cross button end
     top: 100%;
     left: 0; 
     width: 100vw; 
-    left: 50%;
-    transform: translateX(-50%);
+    left: 360%;
+    transform: translateX(-60%);
     background-color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-top: 2px solid #f75d00; 
