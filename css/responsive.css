@@ -7,6 +7,9 @@
   .category-item img {
     height: 130px;
   }
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* mobile M */
 @media only screen and (max-width: 424px) and (min-width: 375px) {
@@ -16,6 +19,9 @@
 
   .category-item img {
     height: 130px;
+  }
+  .offer-grid {
+    grid-template-columns: 1fr;
   }
 }
 /* mobile L device */
@@ -27,6 +33,10 @@
   .category-item img {
     height: 130px;
   }
+
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* Tab devices */
 @media only screen and (max-width: 1198px) and (min-width: 768px) {
@@ -34,6 +44,9 @@
     padding: 40px 20px;
   }
   .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .offer-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
