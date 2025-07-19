@@ -146,4 +146,17 @@ $(document).ready(function () {
     adaptiveHeight: true,
   });
   // hero section js here
+
+  //   top selling brands section js here
+  const slider = $("#top-selling-brands-slider");
+  const slideWidth = $(".top-selling-brands-slide").outerWidth(true);
+
+  $(".top-selling-brands-arrow.right").click(function () {
+    slider.animate({ scrollLeft: "+=" + slideWidth * 1 }, 400);
+  });
+
+  $(".top-selling-brands-arrow.left").click(function () {
+    slider.animate({ scrollLeft: "-=" + slideWidth * 1 }, 400);
+  });
+  //   top selling brands section js here
 });

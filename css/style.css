@@ -1020,3 +1020,100 @@ header {
 }
 
 /* offer section here  */
+
+/* top selling brands section here  */
+.top-selling-brands-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.top-selling-brands-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-selling-brands-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  min-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  background: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+/* Medium devices: 4 per row */
+@media (max-width: 992px) {
+  .slide {
+    min-width: 25%;
+  }
+}
+
+/* Small devices: 3 per row */
+@media (max-width: 768px) {
+  .slide {
+    min-width: 33.33%;
+  }
+}
+
+/* Extra small devices: 2 per row */
+@media (max-width: 576px) {
+  .slide {
+    min-width: 50%;
+  }
+}
+
+/* Mobile or very small: 1 per row */
+@media (max-width: 400px) {
+  .slide {
+    min-width: 100%;
+  }
+}
+.border {
+  border-left: 1px solid red;
+}
+/* top selling brands section here  */
