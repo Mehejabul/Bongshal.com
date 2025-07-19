@@ -1,4 +1,3 @@
-<!-- 2nd testing -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,32 +13,41 @@
 </head>
 
 <body>
-
     <header>
         <div class="top-banner-wrapper">
             <div class="top-banner-slider">
+                <!-- Slick will dynamically add its own arrows -->
                 <div class="top-banner-item">
-                    <i class="fas fa-chevron-left arrow-left"></i>
                     <span>Get $15 Cash, Free 2 Day Shipping & More Perks With RPM*</span>
-                    <i class="fas fa-chevron-right arrow-right"></i>
+                </div>
+                <div class="top-banner-item">
+                    <span>Make Moto Memories, Take a Road Trip | <a href="#" style="color:white; text-decoration: underline;">Shop The Collection</a></span>
+                </div>
+                <div class="top-banner-item">
+                    <span>Clear Sight In Any Light | <a href="#" style="color:white; text-decoration: underline;">Shop Photochromic Helmets</a></span>
+                </div>
+                <div class="top-banner-item">
+                    <span>Beat The Heat! <a href="#" style="color:white; text-decoration: underline;">Shop Summer Riding Gear</a></span>
                 </div>
             </div>
         </div>
 
         <nav class="main-navbar">
             <div class="navbar-left">
+                <!-- Mobile-specific menu toggle (hamburger icon) - visible on mobile, hidden on desktop -->
+                <button class="mobile-menu-toggle mobile-only">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <a href="#" class="logo">
                     <img src="./image/logo/bongshal.png" alt="RevZilla Logo">
                 </a>
-                <button class="shop-your-ride">
+                <!-- Desktop-only shop your ride button - hidden on mobile, visible on desktop -->
+                <button class="shop-your-ride desktop-only">
                     <i class="fas fa-motorcycle"></i> SHOP YOUR RIDE
                 </button>
             </div>
-            <div class="navbar-center">
-                <!-- <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search...">
-                </div> -->
+            <div class="navbar-center desktop-only">
+                <!-- Desktop-only search bar - hidden on mobile, visible on desktop -->
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
                     <input type="text" placeholder="Search...">
@@ -47,18 +55,33 @@
                 </div>
             </div>
             <div class="navbar-right">
-                <!-- <a href="#" class="riders-preferred">
-                    <img src="./image/logo/rider.png"
-                        alt="Riders Preferred Membership">
+                <!-- Desktop-only Riders Preferred Membership link - hidden on mobile, visible on desktop -->
+                <!-- <a href="#" class="riders-preferred desktop-only">
+                    <img src="./image/logo/rider.png" alt="Riders Preferred Membership">
                 </a> -->
-                <!-- <a href="#" class="icon-link"><i class="fas fa-map-marker-alt"></i></a> -->
+                <!-- Location icon - desktop-only as per your previous request -->
+                <a href="#" class="icon-link desktop-only"><i class="fas fa-map-marker-alt"></i></a>
                 <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
                 <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
 
+        <!-- New section for mobile-only Shop Your Ride and Search Bar - visible on mobile, hidden on desktop -->
+        <div class="mobile-secondary-nav mobile-only">
+            <button class="shop-your-ride">
+                <i class="fas fa-motorcycle"></i> SHOP YOUR RIDE
+            </button>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+                <span class="clear-search" style="display: none;"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+
+        <!-- Bottom navbar (main navigation links) -->
         <nav class="bottom-navbar">
-            <div class="menu-toggle">
+            <!-- This menu-toggle is for desktop, to open the sidebar. It will be hidden on mobile. -->
+            <div class="menu-toggle desktop-only">
                 <i class="fas fa-bars"></i>
                 <span>MENU</span>
             </div>
@@ -69,13 +92,6 @@
                     <a href="#">PARTS</a>
                     <div class="mega-menu">
                         <div class="mega-menu-content">
-                            <!-- <div class="mega-menu-header">
-                                <h3>FILTER BY VEHICLE:</h3>
-                                <div class="vehicle-tabs">
-                                    <button class="active">SHOP MOTORCYCLE</button>
-                                    <button>SHOP UTV/ATV</button>
-                                </div>
-                            </div> -->
                             <div class="mega-menu-section shop-all">
                                 <h4><a href="#">SHOP All <i class="fas fa-chevron-right"></i></a></h4>
                             </div>
@@ -176,6 +192,7 @@
         </nav>
     </header>
 
+    <!-- Perks bar -->
     <!-- <div class="perks-bar">
         <div class="perk-item">
             <i class="fas fa-truck"></i>
@@ -206,7 +223,7 @@
                         <li><a href="#">ZillaCash</a></li>
                         <li><a href="#">New Rider Guide</a></li>
                         <li><a href="#" class="has-submenu" data-target="blog-submenu">Common Tread Blog <i
-                                    class="fas fa-chevron-right"></i></a></li>
+                                        class="fas fa-chevron-right"></i></a></li>
                         <li><a href="#">New Arrivals</a></li>
                         <li><a href="#">Track Your Ride with Rever</a></li>
                         <li><a href="#">Give 15% Off, Get 15% Off</a></li>

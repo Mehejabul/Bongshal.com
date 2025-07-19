@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    // Initialize Slick Slider for the top banner (UNCHANGED)
+$(document).ready(function () {
+    // Initialize Slick Slider for the top banner
     $('.top-banner-slider').slick({
         dots: false,
         infinite: true,
@@ -8,17 +8,22 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        prevArrow: $('.top-banner-item .arrow-left'),
-        nextArrow: $('.top-banner-item .arrow-right'),
-        responsive: [
+        responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    arrows: false
+                }
+            },
             {
-                breakpoint: 768,
+                breakpoint: 767,
                 settings: {
                     arrows: false
                 }
             }
         ]
     });
+
+    // Function to reset sidebar levels to the main level
     function resetSidebarLevels() {
         $('.sidebar-level').removeClass('active slide-left');
         $('.sidebar-level.main-level').addClass('active').css('transform', 'translateX(0%)');
@@ -30,28 +35,42 @@ $(document).ready(function(){
     }
 
     // Sidebar Toggle Functionality (open)
-    $('.menu-toggle').on('click', function() {
+    $('.mobile-menu-toggle, .bottom-navbar .menu-toggle').on('click', function () {
         $('.sidebar-menu').addClass('active');
         $('.sidebar-overlay').fadeIn(300);
         $('body').addClass('no-scroll');
         resetSidebarLevels();
     });
 
-    // Close Sidebar completely
-    $('.sidebar-overlay').on('click', function() {
-        $('.sidebar-menu').removeClass('active');
-        $('.sidebar-overlay').fadeOut(300);
-        $('body').removeClass('no-scroll');
-        resetSidebarLevels();
+    // Close Sidebar completely by clicking overlay or close button
+    $('.sidebar-overlay, .close-sidebar').on('click', function () {
+        if ($(this).hasClass('close-sidebar') && !$(this).closest('.sidebar-level').hasClass('main-level')) {
+            var $currentLevel = $(this).closest('.sidebar-level');
+            var $parentLevel = $('.sidebar-level.main-level');
+            $currentLevel.removeClass('active').css('transform', 'translateX(100%)');
+            setTimeout(function () {
+                $parentLevel.css('transition', 'none');
+                $parentLevel.css('transform', 'translateX(-100%)');
+                $parentLevel[0].offsetHeight;
+                $parentLevel.css('transition', 'transform 0.3s ease-in-out');
+                $parentLevel.addClass('active').css('transform', 'translateX(0%)');
+            }, 50);
+
+        } else {
+            $('.sidebar-menu').removeClass('active');
+            $('.sidebar-overlay').fadeOut(300);
+            $('body').removeClass('no-scroll');
+            resetSidebarLevels();
+        }
     });
 
     // Handle submenu opening
-    $('.has-submenu').on('click', function(e) {
+    $('.has-submenu').on('click', function (e) {
         e.preventDefault();
         var targetId = $(this).data('target');
         var $currentLevel = $(this).closest('.sidebar-level');
         $currentLevel.removeClass('active').css('transform', 'translateX(-100%)');
-        setTimeout(function() {
+        setTimeout(function () {
             var $targetLevel = $('#' + targetId);
             $targetLevel.css('transition', 'none');
             $targetLevel.css('transform', 'translateX(100%)');
@@ -59,71 +78,51 @@ $(document).ready(function(){
             $targetLevel.css('transition', 'transform 0.3s ease-in-out');
             $targetLevel.addClass('active').css('transform', 'translateX(0%)');
 
-        }, 50); 
+        }, 50);
     });
 
     // Handle 'Back to Parent' button
-    $('.back-to-parent').on('click', function(e) {
+    $('.back-to-parent').on('click', function (e) {
         e.preventDefault();
-        var $currentLevel = $(this).closest('.sidebar-level'); 
-        var $parentLevel = $('.sidebar-level.main-level'); 
-        $currentLevel.removeClass('active').css('transform', 'translateX(100%)'); 
-        setTimeout(function() {
-            $parentLevel.css('transition', 'none'); 
+        var $currentLevel = $(this).closest('.sidebar-level');
+        var $parentLevel = $('.sidebar-level.main-level');
+        $currentLevel.removeClass('active').css('transform', 'translateX(100%)');
+        setTimeout(function () {
+            $parentLevel.css('transition', 'none');
             $parentLevel.css('transform', 'translateX(-100%)');
             $parentLevel[0].offsetHeight;
             $parentLevel.css('transition', 'transform 0.3s ease-in-out');
             $parentLevel.addClass('active').css('transform', 'translateX(0%)');
-        }, 50); 
+        }, 50);
     });
 
-    // Cross button functionality (close or back)
-    $('.sidebar-level').on('click', '.close-sidebar', function() {
-        var $currentLevel = $(this).closest('.sidebar-level');
-
-        if ($currentLevel.hasClass('main-level')) {
-            $('.sidebar-menu').removeClass('active');
-            $('.sidebar-overlay').fadeOut(300);
-            $('body').removeClass('no-scroll');
-            resetSidebarLevels(); 
+    const $searchBarInputs = $('input[type="text"][placeholder="Search..."]');
+    function toggleClearButton($input, $clearButton) {
+        if ($input.val().length > 0) {
+            $clearButton.fadeIn(150);
         } else {
-            
-            var $parentLevel = $('.sidebar-level.main-level');
-            $currentLevel.removeClass('active').css('transform', 'translateX(100%)');
-            setTimeout(function() {
-                $parentLevel.css('transition', 'none');
-                $parentLevel.css('transform', 'translateX(-100%)');
-                $parentLevel[0].offsetHeight;
-                $parentLevel.css('transition', 'transform 0.3s ease-in-out');
-                $parentLevel.addClass('active').css('transform', 'translateX(0%)'); 
-            }, 50);
-        }
-    });
-});
-
-//clear search button
-$(document).ready(function(){
-
-    const $searchBarInput = $('.search-bar input[type="text"]');
-    const $clearSearchButton = $('.clear-search');
-+
-    function toggleClearButton() {
-        if ($searchBarInput.val().length > 0) {
-            $clearSearchButton.fadeIn(150); 
-        } else {
-            $clearSearchButton.fadeOut(150); 
+            $clearButton.fadeOut(150);
         }
     }
-
-    $searchBarInput.on('input', function() {
-        toggleClearButton();
+    // Listen for input changes on ALL search bars
+    $searchBarInputs.on('input', function () {
+        const $currentInput = $(this);
+        const $currentClearButton = $currentInput.siblings('.clear-search');
+        toggleClearButton($currentInput, $currentClearButton);
     });
 
-    $clearSearchButton.on('click', function() {
-        $searchBarInput.val(''); 
-        toggleClearButton(); 
-        $searchBarInput.focus(); 
+    $('.search-bar .clear-search').on('click', function () {
+        const $currentClearButton = $(this);
+        const $currentInput = $currentClearButton.siblings('input[type="text"]');
+        $currentInput.val('');
+        toggleClearButton($currentInput, $currentClearButton);
+        $currentInput.focus();
     });
-    toggleClearButton();
+
+    $searchBarInputs.each(function () {
+        const $currentInput = $(this);
+        const $currentClearButton = $currentInput.siblings('.clear-search');
+        toggleClearButton($currentInput, $currentClearButton);
+    });
 
 });
