@@ -1,6 +1,6 @@
 /* --- Google Fonts - Roboto --- */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -410,6 +410,7 @@ header {
     Tablet Devices (e.g., 768px and up) 
  ================================================== */
 @media (min-width: 768px) {
+
   /* --- Utility Classes for Responsive Visibility --- */
   .desktop-only {
     display: none !important;
@@ -850,644 +851,6 @@ header {
   navbar css end 
   ==================================================*/
 
-
-/* ===============================================
-   footer css start
-   =============================================== */
-/* Common Footer Background Color */
-.footer-section-bg {
-    background-color: #1a1a1a;
-}
-
-/* Top Info Section (fot1.png) */
-.top-info-section {
-    padding: 4.5rem 0 3.5rem 0;
-    text-align: center;
-}
-
-.top-info-section h1 {
-    color: #ffffff;
-    font-size: 1.9rem;
-    font-weight: bold;
-    margin-bottom: 2.5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
-.top-info-section p {
-    color: #aaaaaa;
-    font-size: 0.9rem;
-    line-height: 1.7;
-    max-width: 950px;
-    margin: 0 auto 3.5rem auto;
-}
-
-.moto-dreams-delivered h2 {
-    color: #ffffff;
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 0.75rem;
-}
-
-.moto-dreams-delivered p {
-    color: #aaaaaa;
-    font-size: 1.15rem;
-    margin-bottom: 0;
-}
-
-/* Review and Trust Section (fot2.png / reviewpart.png) */
-.review-and-trust-section {
-    background-color: #1a1a1a;
-    padding: 3.5rem 0 2.5rem 0;
-}
-
-.review-slider-area {
-    background-color: #262626;
-    padding: 3rem 2.5rem;
-    border-radius: 8px;
-    margin: 0 auto;
-    max-width: 1200px;
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.review-slider-area .review-header {
-    flex: 0 0 280px;
-    padding-right: 2.5rem;
-    text-align: left;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.review-slider-area .review-header h5 {
-    color: #ffffff;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.review-slider-area .review-header .sub-text {
-    color: #aaaaaa;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-}
-
-.review-slider-area .review-header .overall-rating {
-    color: #ffc107;
-    font-size: 2.5rem;
-    margin-bottom: 0.25rem;
-}
-
-.review-slider-area .review-header .review-count-left {
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 0;
-}
-
-.slick-slider-reviews-container {
-    flex: 1;
-    position: relative;
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.review-card {
-    background-color: #262626;
-    color: #ffffff;
-    padding: 1.2rem 1rem;
-    border-radius: 0;
-    text-align: left;
-    margin: 0 10px;
-    border: none;
-    box-shadow: none;
-    height: 180px;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.review-card .rating {
-    color: #ffc107;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.review-card p {
-    font-style: normal;
-    margin-bottom: 0;
-    color: #e0e0e0;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    flex-grow: 1;
-}
-
-.review-card .author-date {
-    margin-top: 1rem;
-    color: #aaaaaa;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    padding-top: 0.5rem;
-    border-top: 1px solid #333333;
-}
-
-.review-card .author-date .author-name {
-    font-weight: bold;
-    color: #ffffff;
-    display: block;
-}
-
-.review-card .author-date .review-date-text {
-    color: #aaaaaa;
-}
-
-/* Slick Slider Customizations */
-.slick-prev,
-.slick-next {
-    font-size: 0;
-    line-height: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
-    border-radius: 50%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 1;
-    color: #aaaaaa;
-    opacity: 1;
-}
-
-.slick-prev {
-    left: -40px;
-}
-
-.slick-next {
-    right: -40px;
-}
-
-.slick-dots {
-    bottom: -35px;
-}
-
-.slick-dots li button:before {
-    font-size: 11px;
-    color: #aaaaaa;
-    opacity: 0.8;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #ff6600;
-    opacity: 1;
-}
-
-.reviews-verified-bottom {
-    color: #aaaaaa;
-    font-size: 0.85rem;
-    text-align: right;
-    margin-top: 1.25rem;
-    width: 100%;
-    padding-right: 10px;
-}
-
-.reviews-verified-bottom img {
-    height: 22px;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
-
-/* Trust Badges Section (fot2.png bottom part) */
-.trust-badges-section {
-    padding: 3.5rem 0;
-    border-top: 1px solid #333333;
-    margin-top: 3.5rem;
-}
-
-.trust-badge-item {
-    text-align: center;
-}
-
-.trust-badge-item .icon-circle {
-    background-color: #ff6600;
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.25rem;
-}
-
-.trust-badge-item .icon-circle i {
-    color: #ffffff;
-    font-size: 2rem;
-}
-
-.trust-badge-item h6 {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-}
-
-.trust-badge-item p {
-    color: #aaaaaa;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.trust-badge-item a {
-    color: #ff6600;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-}
-
-.trust-badge-item a:hover {
-    text-decoration: underline;
-}
-
-/* Main Footer (fot3.png) */
-.main-footer {
-    background-color: #1a1a1a;
-    padding: 3.5rem 0;
-    border-top: 1px solid #333333;
-}
-
-.main-footer h5 {
-    color: #ffffff;
-    margin-bottom: 1.75rem;
-    font-weight: bold;
-    font-size: 1.15rem;
-    text-transform: uppercase;
-}
-
-.main-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.main-footer ul li {
-    margin-bottom: 0.8rem;
-}
-
-.main-footer ul li a {
-    color: #aaaaaa;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-.main-footer ul li a:hover {
-    color: #ff6600;
-}
-
-.main-footer .contact-number {
-    color: #ff6600;
-    font-weight: bold;
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-
-.main-footer .contact-number:hover {
-    text-decoration: underline;
-}
-
-.main-footer .email-signup-btn,
-.main-footer .text-signup-btn {
-    background-color: #ff6600;
-    border-color: #ff6600;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 0.9rem 1.8rem;
-    font-weight: bold;
-    width: 100%;
-    margin-bottom: 1rem;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    font-size: 1rem;
-}
-
-.main-footer .email-signup-btn i,
-.main-footer .text-signup-btn i {
-    font-size: 1.1rem;
-}
-
-.main-footer .email-signup-btn:hover,
-.main-footer .text-signup-btn:hover {
-    background-color: #e65c00;
-    border-color: #e65c00;
-}
-
-.main-footer .signup-disclaimer {
-    color: #aaaaaa;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    margin-top: 1.25rem;
-}
-
-.main-footer .signup-disclaimer a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-.main-footer .signup-disclaimer a:hover {
-    text-decoration: underline;
-}
-
-.main-footer .improve-section h6 {
-    color: #ffffff;
-    font-weight: bold;
-    margin-bottom: 1.25rem;
-    font-size: 1.1rem;
-}
-
-.main-footer .improve-section p {
-    color: #aaaaaa;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.main-footer .improve-section textarea {
-    background-color: #333333;
-    border: 1px solid #444444;
-    color: #ffffff;
-    border-radius: 5px;
-    width: 100%;
-    padding: 0.85rem;
-    resize: vertical;
-    font-size: 0.95rem;
-}
-
-.main-footer .improve-section textarea::placeholder {
-    color: #aaaaaa;
-}
-
-/* Bottom Footer Section (fot4.png) */
-.bottom-footer-section {
-    background-color: #1a1a1a;
-    padding: 2.5rem 0;
-    border-top: 1px solid #333333;
-    text-align: center;
-}
-
-.bottom-footer-section .col-md-4:first-child p {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.comoto-brands img {
-    height: 35px;
-    margin: 0 12px;
-    filter: brightness(0) invert(1);
-}
-
-.comoto-brands p {
-    color: #aaaaaa;
-    font-size: 0.9rem;
-    margin-top: 0.75rem;
-    margin-bottom: 1.75rem;
-}
-
-.bottom-social-icons a {
-    color: #ffffff;
-    font-size: 1.6rem;
-    margin: 0 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.bottom-social-icons a:hover {
-    color: #ff6600;
-}
-
-.copyright-and-links {
-    border-top: 1px solid #333333;
-    padding-top: 1.75rem;
-    margin-top: 1.75rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-    color: #aaaaaa;
-}
-
-.copyright-and-links p {
-    margin-bottom: 0.75rem;
-    margin-right: 1.75rem;
-}
-
-.copyright-and-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.copyright-and-links ul li {
-    margin: 0 0.8rem 0.75rem 0.8rem;
-}
-
-.copyright-and-links ul li a {
-    color: #aaaaaa;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.copyright-and-links ul li a:hover {
-    color: #ff6600;
-}
-
-.copyright-and-links .privacy-choices img {
-    height: 18px;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-
-    .main-footer .col-lg-2,
-    .main-footer .col-lg-3,
-    .main-footer .col-lg-6 {
-        margin-bottom: 2.5rem !important;
-    }
-
-    .slick-prev {
-        left: -35px;
-    }
-
-    .slick-next {
-        right: -35px;
-    }
-
-    .comoto-brands img {
-        margin-bottom: 1.25rem;
-    }
-
-    .review-slider-area .review-header {
-        flex: 0 0 100%;
-        padding-right: 0;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .slick-slider-reviews-container {
-        flex: 0 0 100%;
-    }
-
-    .reviews-verified-bottom {
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .top-info-section h1 {
-        font-size: 1.6rem;
-    }
-
-    .moto-dreams-delivered h2 {
-        font-size: 2rem;
-    }
-
-    .review-slider-area {
-        padding: 1.75rem 1.25rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .review-slider-area h5 {
-        font-size: 1.7rem;
-    }
-
-    .slick-prev,
-    .slick-next {
-        width: 35px;
-        height: 35px;
-        left: -18px;
-        /* Move arrows closer */
-        right: -18px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        font-size: 1.4rem;
-    }
-
-    .review-card {
-        margin: 0 7px;
-    }
-
-    .trust-badge-item {
-        margin-bottom: 2.5rem;
-    }
-
-    .main-footer .email-signup-btn,
-    .main-footer .text-signup-btn {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .main-footer .improve-section {
-        text-align: center;
-    }
-
-    .copyright-and-links p,
-    .copyright-and-links ul {
-        text-align: center;
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .copyright-and-links ul li {
-        margin: 0 0.6rem 0.6rem 0.6rem;
-    }
-
-    .review-slider-area .review-header {
-        padding-right: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .slick-slider-reviews-container {
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .slick-prev,
-    .slick-next {
-        display: none !important;
-    }
-
-    .top-info-section {
-        padding: 2.5rem 0;
-    }
-
-    .top-info-section p {
-        margin-bottom: 2.5rem;
-    }
-
-    .review-and-trust-section {
-        padding: 2.5rem 0;
-    }
-
-    .trust-badges-section {
-        padding: 2.5rem 0;
-        margin-top: 2.5rem;
-    }
-
-    .main-footer {
-        padding: 2.5rem 0;
-    }
-
-    .bottom-footer-section {
-        padding: 2rem 0;
-    }
-
-    .bottom-footer-section .col-md-4:first-child p {
-        margin-bottom: 1.5rem;
-    }
-
-    .bottom-social-icons {
-        margin-top: 1.5rem;
-    }
-}
-
-/*==============================================
-    footer css end 
-    ===============================================*/
-=======
 /* hero section css  here  */
 .hero-slider {
   width: 100%;
@@ -1502,12 +865,14 @@ header {
   display: block;
   object-fit: cover;
 }
+
 /* hero section css  here  */
 
 /* featured category section here  */
 .featured-categories {
   padding: 50px 20px;
 }
+
 .featured-categories .featured-categories-heading h3 {
   font-size: 28px;
   font-weight: 700;
@@ -1516,6 +881,7 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -1607,9 +973,11 @@ header {
   z-index: 2;
   text-transform: uppercase;
 }
+
 .badge.red {
   background-color: #d12f2f;
 }
+
 .badge.green {
   background-color: #28a745;
 }
@@ -1659,7 +1027,6 @@ header {
 }
 
 /* offer section here  */
-
 
 /* top selling brands section here  */
 .top-selling-brands-section {
@@ -1753,8 +1120,766 @@ header {
     min-width: 100%;
   }
 }
+
 .border {
   border-left: 1px solid red;
 }
+
 /* top selling brands section here  */
+/* Common Footer Background Color */
+.footer-section-bg {
+  background-color: #1a1a1a;
+}
+
+/* Top Info Section (fot1.png) */
+.top-info-section {
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.top-info-section h1 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.top-info-section p {
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.moto-dreams-delivered h2 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.moto-dreams-delivered p {
+  color: #aaaaaa;
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Review and Trust Section (fot2.png / reviewpart.png) */
+.review-and-trust-section {
+  background-color: #1a1a1a;
+  padding: 10px 0px;
+}
+
+.review-slider-area {
+  background-color: #262626;
+  padding: 3rem 2.5rem;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.review-slider-area .review-header {
+  flex: 0 0 280px;
+  padding-right: 2.5rem;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.review-slider-area .review-header h5 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.review-slider-area .review-header .sub-text {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.review-slider-area .review-header .overall-rating {
+  color: #ffc107;
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.review-slider-area .review-header .review-count-left {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.slick-slider-reviews-container {
+  flex: 1;
+  position: relative;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.review-card {
+  background-color: #262626;
+  color: #ffffff;
+  padding: 1.2rem 1rem;
+  border-radius: 0;
+  text-align: left;
+  margin: 0 10px;
+  border: none;
+  box-shadow: none;
+  height: 180px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-card .rating {
+  color: #ffc107;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-card p {
+  font-style: normal;
+  margin-bottom: 0;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.review-card .author-date {
+  margin-top: 1rem;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  padding-top: 0.5rem;
+  border-top: 1px solid #333333;
+}
+
+.review-card .author-date .author-name {
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+}
+
+.review-card .author-date .review-date-text {
+  color: #aaaaaa;
+}
+
+/* Slick Slider Customizations */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1;
+  color: #aaaaaa;
+  opacity: 1;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li button:before {
+  font-size: 11px;
+  color: #aaaaaa;
+  opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6600;
+  opacity: 1;
+}
+
+.reviews-verified-bottom {
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  text-align: right;
+  margin-top: 1.25rem;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.reviews-verified-bottom img {
+  height: 22px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+
+/* Trust Badges Section (fot2.png bottom part) */
+.trust-badges-section {
+  padding: 3.5rem 0;
+  /* border-top: 1px solid #333333;  */
+  margin-top: 3.5rem;
+}
+
+.trust-badge-item {
+  text-align: center;
+}
+
+.trust-badge-item .icon-circle {
+  background-color: #ff6600;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.trust-badge-item .icon-circle i {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.trust-badge-item h6 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.trust-badge-item p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.trust-badge-item a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.trust-badge-item a:hover {
+  text-decoration: underline;
+}
+
+/* Main Footer (fot3.png) */
+.ft_st_on {
+  border-top: 1px solid #333333;
+}
+
+.ft_st_on img {
+  padding: 10x 0px;
+}
+
+.main-footer {
+  background-color: #1a1a1a;
+  padding: 3.5rem 0;
+  border-top: 1px solid #333333;
+}
+
+.main-footer h5 {
+  color: #ffffff;
+  margin-bottom: 1.75rem;
+  font-weight: bold;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.main-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-footer ul li {
+  margin-bottom: 0.8rem;
+}
+
+.main-footer ul li a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.main-footer ul li a:hover {
+  color: #ff6600;
+}
+
+.main-footer .contact-number {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.main-footer .contact-number:hover {
+  text-decoration: underline;
+}
+
+.main-footer .email-signup-btn,
+.main-footer .text-signup-btn {
+  background-color: #ff6600;
+  border-color: #ff6600;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0.9rem 1.8rem;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.main-footer .email-signup-btn i,
+.main-footer .text-signup-btn i {
+  font-size: 1.1rem;
+}
+
+.main-footer .email-signup-btn:hover,
+.main-footer .text-signup-btn:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+
+.main-footer .signup-disclaimer {
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 1.25rem;
+}
+
+.main-footer .signup-disclaimer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.main-footer .signup-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+.main-footer .improve-section h6 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.main-footer .improve-section p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.main-footer .improve-section textarea {
+  background-color: #333333;
+  border: 1px solid #444444;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.85rem;
+  resize: vertical;
+  font-size: 0.95rem;
+}
+
+.main-footer .improve-section textarea::placeholder {
+  color: #aaaaaa;
+}
+
+/* Bottom Footer Section (fot4.png) */
+.bottom-footer-section {
+  background-color: #1a1a1a;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.bottom-footer-section .col-md-4:first-child p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.comoto-brands img {
+  height: 35px;
+  margin: 0 12px;
+  filter: brightness(0) invert(1);
+}
+
+.comoto-brands p {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.bottom-social-icons a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin: 0 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.bottom-social-icons a:hover {
+  color: #ff6600;
+}
+
+.copyright-and-links {
+  border-top: 1px solid #333333;
+  padding-top: 1.75rem;
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+.copyright-and-links p {
+  margin-bottom: 0.75rem;
+  margin-right: 1.75rem;
+}
+
+.copyright-and-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.copyright-and-links ul li {
+  margin: 0 0.8rem 0.75rem 0.8rem;
+}
+
+.copyright-and-links ul li a {
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.copyright-and-links ul li a:hover {
+  color: #ff6600;
+}
+
+.copyright-and-links .privacy-choices img {
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+
+  .main-footer .col-lg-2,
+  .main-footer .col-lg-3,
+  .main-footer .col-lg-6 {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .slick-prev {
+    left: -35px;
+  }
+
+  .slick-next {
+    right: -35px;
+  }
+
+  .comoto-brands img {
+    margin-bottom: 1.25rem;
+  }
+
+  .review-slider-area .review-header {
+    flex: 0 0 100%;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .slick-slider-reviews-container {
+    flex: 0 0 100%;
+  }
+
+  .reviews-verified-bottom {
+    text-align: center;
+  }
+
+  /* Collapsible headers for md and below */
+  .footer-col-title-toggle {
+    display: block !important;
+    /* Show toggle on md and smaller */
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 0;
+    /* Remove default h5 margin */
+    position: relative;
+  }
+
+  .footer-col-title-toggle i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+
+  .footer-col-title-toggle[aria-expanded="true"] i {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .footer-col-list-desktop {
+    display: none !important;
+    /* Hide desktop list on md and smaller */
+  }
+
+  .footer-col-list-mobile {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-info-section h1 {
+    font-size: 20px;
+  }
+
+  .moto-dreams-delivered h2 {
+    font-size: 2rem;
+  }
+
+  .review-slider-area {
+    padding: 1.75rem 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-slider-area h5 {
+    font-size: 1.7rem;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+    left: -18px;
+    /* Move arrows closer */
+    right: -18px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 1.4rem;
+  }
+
+  .review-card {
+    margin: 0 7px;
+  }
+
+  .trust-badge-item {
+    margin-bottom: 2.5rem;
+  }
+
+  .main-footer .email-signup-btn,
+  .main-footer .text-signup-btn {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-footer .improve-section {
+    text-align: center;
+  }
+
+  .copyright-and-links p,
+  .copyright-and-links ul {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .copyright-and-links ul li {
+    margin: 0 0.6rem 0.6rem 0.6rem;
+  }
+
+  .review-slider-area .review-header {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .slick-slider-reviews-container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  .top-info-section {
+    padding: 0px;
+  }
+
+  .top-info-section p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .moto-dreams-delivered h2 {
+    font-size: 20px;
+  }
+
+  .trust-badge-item h6 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .trust-badge-item p {
+    font-size: 10px;
+  }
+
+  .review-slider-area .review-header .overall-rating {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .review-slider-area .review-header .sub-text {
+    margin-bottom: 15px;
+  }
+
+  .review-slider-area .review-header h5 {
+    font-size: 19px;
+  }
+
+  .review-and-trust-section {
+    padding: 5px 0;
+  }
+
+  .trust-badges-section {
+    padding: 10px 0px;
+    margin-top: 10px;
+  }
+
+  .col-md-4.mb-4.mb-md-0.trust-badge-item {
+    margin-bottom: 5px !important;
+  }
+
+  .trust-badge-item {
+    margin-bottom: 5px !important;
+  }
+
+  .main-footer .improve-section h6 {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.main-footer .improve-section p {
+    font-size: 12px;
+}
+
+.ft_st_on {
+    padding: 15px 0px;
+}
+
+  .main-footer .col-lg-2,
+  .main-footer .col-lg-3,
+  .main-footer .col-lg-6 {
+    margin-bottom: 5px !important;
+  }
+
+  .main-footer {
+    padding: 10px 0px !important;
+  }
+
+  .footer-col-title-toggle {
+    font-size: 15px;
+  }
+
+  .footer-col-title-toggle {
+    font-size: 15px;
+  }
+
+  .footer-col-title-toggle {
+    font-size: 12px;
+  }
+
+  .main-footer .improve-section {
+    text-align: left;
+    margin-top: 10px !important;
+  }
+  .main-footer h5 {
+    font-size: 15px;
+}
+.main-footer .contact-number {
+    font-size: 12px;
+}
+  .bottom-footer-section {
+    padding: 2rem 0;
+  }
+
+  .bottom-footer-section .col-md-4:first-child p {
+    margin-bottom: 1.5rem;
+  }
+
+  .bottom-social-icons {
+    margin-top: 1.5rem;
+  }
+
+  .top-info-section h1 {
+    font-size: 12px;
+  }
+}
 

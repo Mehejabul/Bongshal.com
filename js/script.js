@@ -1,67 +1,4 @@
 $(document).ready(function () {
-
-    // Initialize Slick Slider for the top banner
-    $('.top-banner-slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [{
-                breakpoint: 1023,
-                settings: {
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    arrows: false
-                }
-            }
-        ]
-    });
-    //review section slider start
-    $(document).ready(function () {
-        $('.slick-slider-reviews').slick({
-            infinite: true,
-            slidesToShow: 3, // Show 3 reviews at a time on larger screens
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            dots: true, // Show navigation dots
-            arrows: true, // Show navigation arrows
-            responsive: [{
-                    breakpoint: 1024, // For screens smaller than 1024px
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                        arrows: true
-                    }
-                },
-                {
-                    breakpoint: 768, // For screens smaller than 768px (tablets)
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false // Hide arrows on smaller screens for better touch experience
-                    }
-                },
-                {
-                    breakpoint: 480, // For screens smaller than 480px (mobile)
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false // Hide arrows on mobile
-                    }
-                }
-            ]
-        });
-    });
   // Initialize Slick Slider for the top banner
   $(".top-banner-slider").slick({
     dots: false,
@@ -169,14 +106,12 @@ $(document).ready(function () {
     }, 50);
   });
 
-    const $searchBarInputs = $('input[type="text"][placeholder="Search..."]');
-
-    function toggleClearButton($input, $clearButton) {
-        if ($input.val().length > 0) {
-            $clearButton.fadeIn(150);
-        } else {
-            $clearButton.fadeOut(150);
-        }
+  const $searchBarInputs = $('input[type="text"][placeholder="Search..."]');
+  function toggleClearButton($input, $clearButton) {
+    if ($input.val().length > 0) {
+      $clearButton.fadeIn(150);
+    } else {
+      $clearButton.fadeOut(150);
     }
   }
   // Listen for input changes on ALL search bars
@@ -225,3 +160,45 @@ $(document).ready(function () {
   });
   //   top selling brands section js here
 });
+
+//footer js here
+    //review section slider start
+    $(document).ready(function(){
+        $('.slick-slider-reviews').slick({
+            infinite: true,
+            slidesToShow: 3, // Show 3 reviews at a time on larger screens
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true, // Show navigation dots
+            arrows: true, // Show navigation arrows
+            responsive: [
+                {
+                    breakpoint: 1024, // For screens smaller than 1024px
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 768, // For screens smaller than 768px (tablets)
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false // Hide arrows on smaller screens for better touch experience
+                    }
+                },
+                {
+                    breakpoint: 480, // For screens smaller than 480px (mobile)
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false // Hide arrows on mobile
+                    }
+                }
+            ]
+        });
+    });
